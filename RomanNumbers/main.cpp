@@ -1,5 +1,7 @@
-#include"RomanHelper.h"
+#include "RomanHelper.h"
+#include <iostream>
 int main()
 {
-	std::cout << "fggf";
+	RomanHelper RomanNumerals;
+	std::cout << RomanNumerals.to_roman(4548);
 }

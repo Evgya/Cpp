@@ -1,15 +1,5 @@
 #include "RomanHelper.h"
 
-class RomanHelper {
-public:
-    std::string to_roman(unsigned int n);
-    int from_roman(std::string rn);
-private:
-    const std::vector <std::pair <unsigned int, std::string> > bases = {
-        {1000, "M"}, {900, "CM"}, {500, "D"}, {400, "CD"}, {100, "C"}, {90, "XC"}, {50, "L"}, {40, "XL"}, {10, "X"}, {9, "IX"}, {5, "V"}, {4, "IV"}, {1, "I"}
-    };
-} RomanNumerals;
-
 std::string RomanHelper::to_roman(unsigned int n)
 {
     std::string RomanNum("");
@@ -28,7 +18,6 @@ std::string RomanHelper::to_roman(unsigned int n)
     }
     return RomanNum;
 }
-
 int RomanHelper::from_roman(std::string rn)
 {
     auto iter = begin(bases);
