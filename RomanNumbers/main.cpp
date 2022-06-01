@@ -2,6 +2,6 @@
 #include <iostream>
 int main()
 {
-	RomanHelper RomanNumerals(4548);
-	std::cout << RomanNumerals.to_roman();
+	RomanHelper RomanNumerals(3548);
+	std::cout << RomanNumerals.to_roman(RomanNumerals.from_roman("XIII"));
 }
